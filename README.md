@@ -6,6 +6,7 @@ A [Py4web](https://py4web.com/) GUI application for managing and monitoring all 
 
 * Responsive layout built with Bulma and Bootstrap
 * Toggleable dark/light theme (use the icon in the navigation bar)
+* Card style dashboard with updated icons and modern fonts
 
 ## Getting Started
 

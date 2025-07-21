@@ -1,126 +1,106 @@
 [[extend 'layout.html']]
 
 <div class="box" id="index">
-  <div class="columns">
+  <div class="columns is-multiline">
     <div class="column is-3">
-      <a class="button is-large" style="width:100%" href="[[=URL('stats')]]">
+      <a class="dashboard-card" href="[[=URL('stats')]]">
         <span class="icon is-large">
-          <i class="fa fa-chart-line has-text-primary" ></i>
+          <i class="fa fa-chart-line has-text-primary fa-2x"></i>
         </span>
-        <span>Statistics</span>
+        <p class="mt-2">Statistics</p>
       </a>
     </div>
     <div class="column is-3">
-      <a class="button is-large" style="width:100%" href="[[=URL('manage_groups')]]">
+      <a class="dashboard-card" href="[[=URL('manage_groups')]]">
         <span class="icon is-large">
-          <i class="fa fa-users has-text-primary" ></i>
+          <i class="fa fa-users has-text-primary fa-2x"></i>
         </span>
-        <span>Routing Groups &nbsp</span> 
-        <span class="tag is-info is-rounded is-medium">
-          [[=tot_grps]] 
-        </span>
+        <p class="mt-2">Routing Groups</p>
+        <span class="tag is-info is-rounded mt-1">[[=tot_grps]]</span>
       </a>
     </div>
     <div class="column is-3">
-      <a class="button is-large" style="width:100%" href="[[=URL('manage_users')]]">
+      <a class="dashboard-card" href="[[=URL('manage_users')]]">
         <span class="icon is-large">
-          <i class="fa fa-user has-text-primary" ></i>
+          <i class="fa fa-user has-text-primary fa-2x"></i>
         </span>
-        <span>Users &nbsp</span>
-        <span class="tag is-info is-rounded is-medium">
-          [[=tot_users]] 
-        </span>
+        <p class="mt-2">Users</p>
+        <span class="tag is-info is-rounded mt-1">[[=tot_users]]</span>
       </a>
     </div>
     <div class="column is-3">
-      <a class="button is-large" style="width:100%" href="[[=URL('manage_filters')]]">
+      <a class="dashboard-card" href="[[=URL('manage_filters')]]">
         <span class="icon is-large">
-          <i class="fa fa-filter has-text-primary" ></i>
+          <i class="fa fa-filter has-text-primary fa-2x"></i>
         </span>
-        <span>Filters &nbsp</span>
-        <span class="tag is-info is-rounded is-medium">
-          [[=tot_filters]] 
-        </span>
+        <p class="mt-2">Filters</p>
+        <span class="tag is-info is-rounded mt-1">[[=tot_filters]]</span>
       </a>
     </div>
   </div>
   <div class="columns">
     <div class="column is-3">
-      <a class="button is-large" style="width:100%" href="[[=URL('manage_smpp_connectors')]]">
+      <a class="dashboard-card" href="[[=URL('manage_smpp_connectors')]]">
         <span class="icon is-large">
-          <i class="fa fa-ethernet has-text-primary" ></i>
+          <i class="fa fa-ethernet has-text-primary fa-2x"></i>
         </span>
-        <span>SMPP Connectors &nbsp</span>
-        <span class="tag is-info is-rounded is-medium">
-          [[=tot_smppcons]] 
-        </span>
+        <p class="mt-2">SMPP Connectors</p>
+        <span class="tag is-info is-rounded mt-1">[[=tot_smppcons]]</span>
       </a>
     </div>
     <div class="column is-3">
-      <a class="button is-large" style="width:100%" href="[[=URL('manage_http_connectors')]]">
+      <a class="dashboard-card" href="[[=URL('manage_http_connectors')]]">
         <span class="icon is-large">
-          <i class="fa fa-code has-text-primary" ></i>
+          <i class="fa fa-code has-text-primary fa-2x"></i>
         </span>
-        <span>HTTP Connectors &nbsp</span>
-        <span class="tag is-info is-rounded is-medium">
-          [[=tot_httpcons]] 
-        </span>
+        <p class="mt-2">HTTP Connectors</p>
+        <span class="tag is-info is-rounded mt-1">[[=tot_httpcons]]</span>
       </a>
     </div>
     <div class="column is-3">
-      <a class="button is-large" style="width:100%" href="[[=URL('manage_mt_routes')]]">
+      <a class="dashboard-card" href="[[=URL('manage_mt_routes')]]">
         <span class="icon is-large">
-          <i class="fa fa-sign-out-alt has-text-primary" ></i>
+          <i class="fa fa-sign-out-alt has-text-primary fa-2x"></i>
         </span>
-        <span>MT Routes &nbsp</span>
-        <span class="tag is-info is-rounded is-medium">
-          [[=tot_mtroutes]] 
-        </span>
+        <p class="mt-2">MT Routes</p>
+        <span class="tag is-info is-rounded mt-1">[[=tot_mtroutes]]</span>
       </a>
     </div>
     <div class="column is-3">
-      <a class="button is-large" style="width:100%" href="[[=URL('manage_mo_routes')]]">
+      <a class="dashboard-card" href="[[=URL('manage_mo_routes')]]">
         <span class="icon is-large">
-          <i class="fa fa-sign-in-alt has-text-primary" ></i>
+          <i class="fa fa-sign-in-alt has-text-primary fa-2x"></i>
         </span>
-        <span>MO Routes &nbsp</span>
-           <span class="tag is-info is-rounded is-medium">
-          [[=tot_moroutes]] 
-        </span>
+        <p class="mt-2">MO Routes</p>
+        <span class="tag is-info is-rounded mt-1">[[=tot_moroutes]]</span>
       </a>
     </div>
   </div>
   <div class="columns">
     <div class="column is-3">
-      <a class="button is-large" style="width:100%" href="[[=URL('manage_imts')]]">
+      <a class="dashboard-card" href="[[=URL('manage_imts')]]">
         <span class="icon is-large">
-          <i class="fa fa-user-shield has-text-primary" ></i>
+          <i class="fa fa-user-shield has-text-primary fa-2x"></i>
         </span>
-        <span>MT Interceptors &nbsp</span>
-           <span class="tag is-info is-rounded is-medium">
-          [[=tot_imts]] 
-        </span>
-     
+        <p class="mt-2">MT Interceptors</p>
+        <span class="tag is-info is-rounded mt-1">[[=tot_imts]]</span>
       </a>
     </div>
     <div class="column is-3">
-      <a class="button is-large" style="width:100%" href="[[=URL('manage_imos')]]">
+      <a class="dashboard-card" href="[[=URL('manage_imos')]]">
         <span class="icon is-large">
-          <i class="fa fa-user-shield has-text-primary" ></i>
+          <i class="fa fa-user-shield has-text-primary fa-2x"></i>
         </span>
-        <span>MO Interceptors &nbsp</span>
-           <span class="tag is-info is-rounded is-medium">
-          [[=tot_imos]] 
-        </span>
-     
+        <p class="mt-2">MO Interceptors</p>
+        <span class="tag is-info is-rounded mt-1">[[=tot_imos]]</span>
       </a>
     </div>
     <div class="column is-3">
-      <a class="button is-large" style="width:100%" href="[[=URL('super_admin')]]">
+      <a class="dashboard-card" href="[[=URL('super_admin')]]">
         <span class="icon is-large">
-          <i class="fa fa-cog has-text-primary" ></i>
+          <i class="fa fa-cog has-text-primary fa-2x"></i>
         </span>
-        <span>Super Admin</span>
+        <p class="mt-2">Super Admin</p>
       </a>
     </div>
     
