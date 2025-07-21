@@ -1,6 +1,11 @@
 # Jasmin SMS GUI
 
-A [Py4web](https://py4web.com/) GUI application for managing and monitoring all aspects of a a single instance of the popular open source [Jasmin SMS Gateway](https://github.com/jookies/jasmin) as an alternative to the standard jcli command line interface. 
+A [Py4web](https://py4web.com/) GUI application for managing and monitoring all aspects of a a single instance of the popular open source [Jasmin SMS Gateway](https://github.com/jookies/jasmin) as an alternative to the standard jcli command line interface.
+
+## Interface features
+
+* Responsive layout built with Bulma and Bootstrap
+* Toggleable dark/light theme (use the icon in the navigation bar)
 
 ## Getting Started
 

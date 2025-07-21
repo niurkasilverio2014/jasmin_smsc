@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/theme.css">
     <style>.py4web-validation-error{margin-top:-16px; font-size:0.8em;color:red}</style>
     [[block page_head]]<!-- individual pages can customize header here -->[[end]]
   </head>
@@ -30,7 +31,14 @@
       </div>
       <div id="left-navbar" class="navbar-menu">
         <div class="navbar-start">
-	      [[block page_menu_items]]<!-- individual pages can add menu items here -->[[end]]
+              [[block page_menu_items]]<!-- individual pages can add menu items here -->[[end]]
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <button class="button is-small" onclick="toggleDarkMode()" title="Toggle dark mode">
+              <span class="icon"><i class="fas fa-adjust"></i></span>
+            </button>
+          </div>
         </div>
         <!--
         <div id="left-navbar" class="navbar-menu">
@@ -74,6 +82,7 @@
     </body>
     <!-- You've gotta have utils.js -->
   <script src="js/utils.js"></script>
+  <script src="js/theme.js"></script>
   
   [[block page_scripts]]<!-- individual pages can add scripts here -->[[end]]
 </html>
